@@ -1,6 +1,5 @@
 .hero-section {
-  padding-top: 98px;
-  padding-bottom: 384px;
+  padding-top: 177px;
   background-image: url(../img/hero/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: top center;
@@ -10,8 +9,7 @@
   position: relative;
 
   @include media(desktop) {
-    padding-top: 192px;
-    padding-bottom: 418px;
+    padding-top: 428px;
     background-image: url(../img/hero/hero-bg-desk.jpg);
     background-position: top center;
     max-width: 1440px;
@@ -22,20 +20,96 @@
   padding: 0;
 }
 
-.hero-title {
-  padding: 16px;
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.5);
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 1.4;
-  color: #264522;
+.hero-content-wrapper {
+  padding: 24px 16px;
+  backdrop-filter: blur(20px);
+  background: rgba(30, 30, 30, 0.2);
 
   @include media(desktop) {
-    padding: 16px 16px 16px 72px;
-    max-width: 708px;
-    font-size: 56px;
-    line-height: 1.5;
+    max-width: 1038px;
+    padding: 32px 32px 32px 72px;
+  }
+}
+
+.hero-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #f5f5f5;
+  margin-bottom: 20px;
+  max-width: 300px;
+
+  @include media(desktop) {
+    font-size: 64px;
+    max-width: max-content;
+    margin-bottom: 64px;
+  }
+}
+
+.hero-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #f5f5f5;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.hero-btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+
+  @include media(desktop) {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
+.hero-games-link {
+  background: #e91e63;
+  padding: 12px 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+    padding: 16px 24px;
+    font-size: 24px;
+    max-width: 306px;
+  }
+}
+
+.hero-contact-link {
+  border: 1px solid #e91e63;
+  padding: 12px 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+    padding: 16px 24px;
+    font-size: 24px;
+    max-width: 306px;
   }
 }
