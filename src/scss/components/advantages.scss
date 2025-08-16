@@ -1,0 +1,132 @@
+.advantages-section {
+  padding-bottom: 80px;
+
+  @include media(desktop) {
+    padding-bottom: 96px;
+  }
+}
+
+.advantages-section-wrapper {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    max-width: 1440px;
+  }
+}
+
+.advantages-container {
+  padding-left: 0;
+  padding-right: 0;
+
+  @include media(desktop) {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}
+
+.advantages-swiper-container {
+  max-width: 343px;
+  margin-left: auto;
+  margin-right: auto;
+  visibility: hidden;
+
+  @include media(desktop) {
+    max-width: 1440px;
+  }
+}
+
+.advantages-swiper-container.show {
+  visibility: visible;
+}
+
+.advantages-slide {
+  padding: 0;
+  max-width: 343px;
+  display: flex !important;
+  flex-direction: column;
+  gap: 16px;
+
+  @include media(desktop) {
+    max-width: 306px;
+    gap: 24px;
+  }
+}
+
+.advantages-item-wrapper {
+  border: 0.1px solid #cea032;
+  border-radius: 16px;
+  padding: 16px;
+  min-height: 106px;
+
+  @include media(desktop) {
+    border-radius: 24px;
+    min-height: 164px;
+    padding: 24px;
+  }
+}
+
+.advantages-item-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 8px;
+
+  @include media(desktop) {
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+}
+
+.advantages-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+  color: #264522;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
+.advantages-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+  color: #264522;
+
+  @include media(desktop) {
+    font-size: 16px;
+  }
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 32px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.advantages-dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background-color: rgba(184, 94, 250, 0.2);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.advantages-dot.active {
+  background-color: #b85efa;
+}

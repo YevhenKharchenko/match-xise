@@ -1,0 +1,62 @@
+.context-menu {
+  display: none;
+  backdrop-filter: blur(10px);
+  background: rgba(142, 191, 255, 0.8);
+  padding: 0 16px 16px 16px;
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 76px;
+  left: 0;
+  right: 0;
+  transform: none;
+  z-index: 10;
+}
+
+.context-nav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.context-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 12px;
+}
+
+.context-list-link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: right;
+  color: #264522;
+  transition: all 0.3s ease-in-out;
+
+  &:active {
+  }
+}
+
+.is-open {
+  display: block;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.closed {
+  display: none;
+}
+
+.screen-freeze {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}

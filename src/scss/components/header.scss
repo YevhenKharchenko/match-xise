@@ -1,0 +1,100 @@
+.header {
+  backdrop-filter: blur(10px);
+  background: rgba(142, 191, 255, 0.8);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+
+  @include media(desktop) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.header-container {
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include media(desktop) {
+    justify-content: space-between;
+  }
+}
+
+.header-logo-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  @include media(desktop) {
+    gap: 12px;
+  }
+}
+
+.header-span {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+  color: #264522;
+
+  @include media(desktop) {
+    font-weight: 600;
+    max-width: 179px;
+  }
+}
+
+.nav-list {
+  display: none;
+
+  @include media(desktop) {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+}
+
+.nav-list-link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+  color: #264522;
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &.active {
+  }
+}
+
+.nav-list-link.active {
+}
+
+.nav-btn {
+  background-color: transparent;
+  width: 44px;
+  height: 44px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.close-btn {
+  display: none;
+  background-color: transparent;
+  width: 44px;
+  height: 44px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
