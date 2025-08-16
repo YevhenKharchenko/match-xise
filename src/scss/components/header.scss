@@ -1,6 +1,6 @@
 .header {
-  backdrop-filter: blur(10px);
-  background: rgba(142, 191, 255, 0.8);
+  backdrop-filter: blur(20px);
+  background: rgba(245, 245, 245, 0.1);
   padding-top: 16px;
   padding-bottom: 16px;
   position: fixed;
@@ -20,10 +20,9 @@
 .nav {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
   @include media(desktop) {
-    justify-content: space-between;
   }
 }
 
@@ -38,16 +37,14 @@
 }
 
 .header-span {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 18px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
   line-height: 1.5;
-  letter-spacing: -0.03em;
-  color: #264522;
+  color: #f5f5f5;
 
   @include media(desktop) {
-    font-weight: 600;
-    max-width: 179px;
+    font-size: 32px;
   }
 }
 
@@ -57,17 +54,16 @@
   @include media(desktop) {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 24px;
   }
 }
 
 .nav-list-link {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.5;
-  letter-spacing: -0.03em;
-  color: #264522;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.4;
+  color: #f5f5f5;
   transition: all 0.3s ease-in-out;
 
   &:hover,
@@ -79,9 +75,9 @@
 }
 
 .nav-btn {
-  background-color: transparent;
-  width: 44px;
-  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @include media(desktop) {
     display: none;
@@ -90,9 +86,8 @@
 
 .close-btn {
   display: none;
-  background-color: transparent;
-  width: 44px;
-  height: 44px;
+  justify-content: center;
+  align-items: center;
 
   @include media(desktop) {
     display: none;

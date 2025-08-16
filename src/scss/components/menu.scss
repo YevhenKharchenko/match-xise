@@ -1,13 +1,14 @@
 .context-menu {
   display: none;
-  backdrop-filter: blur(10px);
-  background: rgba(142, 191, 255, 0.8);
+  backdrop-filter: blur(20px);
+  background: rgba(245, 245, 245, 0.1);
   padding: 0 16px 16px 16px;
+  justify-content: end;
   max-width: 375px;
   width: 100%;
   margin: 0 auto;
   position: fixed;
-  top: 76px;
+  top: 62px;
   left: 0;
   right: 0;
   transform: none;
@@ -28,12 +29,12 @@
 }
 
 .context-list-link {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
   text-align: right;
-  color: #264522;
+  color: #f5f5f5;
   transition: all 0.3s ease-in-out;
 
   &:active {
@@ -41,7 +42,7 @@
 }
 
 .is-open {
-  display: block;
+  display: flex;
 
   @include media(desktop) {
     display: none;
